@@ -1,0 +1,73 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  line-height: 1.2;
+  transition: all 0.2s ease;
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+/* Booking & Payment Statuses */
+.status-confirmed, .status-active, .status-displayed, .status-paid, .status-completed {
+  background-color: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.status-pending, .status-unpaid {
+  background-color: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.status-cancelled, .status-inactive, .status-hidden {
+  background-color: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.status-refunded {
+  background-color: rgba(99, 102, 241, 0.12);
+  color: #4f46e5;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+/* Dark mode variations */
+.admin-dark-mode .status-confirmed, 
+.admin-dark-mode .status-active, 
+.admin-dark-mode .status-displayed, 
+.admin-dark-mode .status-paid, 
+.admin-dark-mode .status-completed {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+.admin-dark-mode .status-pending, 
+.admin-dark-mode .status-unpaid {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+}
+
+.admin-dark-mode .status-cancelled, 
+.admin-dark-mode .status-inactive, 
+.admin-dark-mode .status-hidden {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.admin-dark-mode .status-refunded {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: #818cf8;
+}

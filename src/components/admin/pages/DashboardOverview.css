@@ -1,0 +1,235 @@
+.dashboard-overview-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Stats Cards Grid (Exactly 4 Cards) */
+.stats-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-dark-mode .stat-card {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.admin-dark-mode .stat-title {
+  color: #94a3b8;
+}
+
+.stat-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-theme-indigo .stat-icon-wrapper { background: rgba(79, 70, 229, 0.1); color: #4f46e5; }
+.card-theme-sky .stat-icon-wrapper { background: rgba(14, 165, 233, 0.1); color: #0ea5e9; }
+.card-theme-amber .stat-icon-wrapper { background: rgba(245, 158, 11, 0.1); color: #d97706; }
+.card-theme-purple .stat-icon-wrapper { background: rgba(168, 85, 247, 0.1); color: #a855f7; }
+
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.admin-dark-mode .stat-value {
+  color: #f8fafc;
+}
+
+/* Split Layout */
+.overview-split-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.overview-card-box {
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-dark-mode .overview-card-box {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.box-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+  color: #0f172a;
+}
+
+.admin-dark-mode .box-header h3 {
+  color: #f8fafc;
+}
+
+.box-subtitle {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.view-all-link-btn {
+  background: transparent;
+  border: none;
+  color: #4f46e5;
+  font-size: 0.84rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.admin-dark-mode .view-all-link-btn {
+  color: #818cf8;
+}
+
+/* Mini Compact Chart Box */
+.compact-chart-box {
+  justify-content: space-between;
+}
+
+.mini-chart-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.mini-progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mini-bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.bar-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.84rem;
+  color: #334155;
+}
+
+.admin-dark-mode .bar-info {
+  color: #cbd5e1;
+}
+
+.progress-bg {
+  height: 8px;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.admin-dark-mode .progress-bg {
+  background-color: #0f172a;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.fill-confirmed { background-color: #10b981; }
+.fill-pending { background-color: #f59e0b; }
+
+.chart-legend-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.admin-dark-mode .chart-legend-box {
+  border-top-color: #334155;
+}
+
+.chart-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.admin-dark-mode .chart-legend-item {
+  color: #94a3b8;
+}
+
+@media (max-width: 1024px) {
+  .stats-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .overview-split-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .stats-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

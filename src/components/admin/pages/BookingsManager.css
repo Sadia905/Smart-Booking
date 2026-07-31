@@ -1,0 +1,56 @@
+.bookings-manager-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.text-indigo {
+  color: #4f46e5;
+}
+
+.admin-dark-mode .text-indigo {
+  color: #818cf8;
+}
+
+.font-mono {
+  font-family: monospace;
+}
+
+.text-muted {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+.date-time-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-sub {
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.btn-confirm {
+  color: #10b981;
+}
+
+.btn-confirm:hover {
+  background-color: rgba(16, 185, 129, 0.15);
+}
+
+.btn-complete {
+  color: #3b82f6;
+}
+
+.btn-complete:hover {
+  background-color: rgba(59, 130, 246, 0.15);
+}
+
+.btn-cancel {
+  color: #f59e0b;
+}
+
+.btn-cancel:hover {
+  background-color: rgba(245, 158, 11, 0.15);
+}

@@ -1,0 +1,166 @@
+.feedback-manager-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feedback-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+.feedback-card-item {
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s ease;
+}
+
+.admin-dark-mode .feedback-card-item {
+  background-color: #0f172a;
+  border-color: #334155;
+}
+
+.feedback-card-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.fb-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fb-user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fb-user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.fb-user-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.admin-dark-mode .fb-user-title {
+  color: #f8fafc;
+}
+
+.fb-date-sub {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.fb-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fb-service-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+.admin-dark-mode .fb-service-badge {
+  color: #818cf8;
+}
+
+.fb-rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.rating-num {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-left: 4px;
+}
+
+.fb-review-quote {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.admin-dark-mode .fb-review-quote {
+  color: #cbd5e1;
+}
+
+.fb-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.85rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.admin-dark-mode .fb-card-footer {
+  border-top-color: #334155;
+}
+
+.fb-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-dark-mode .fb-action-btn {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+
+.btn-display {
+  color: #059669;
+}
+
+.btn-display:hover {
+  background-color: rgba(16, 185, 129, 0.15);
+}
+
+.btn-hide {
+  color: #d97706;
+}
+
+.btn-hide:hover {
+  background-color: rgba(245, 158, 11, 0.15);
+}
+
+.btn-delete-fb {
+  color: #ef4444;
+}
+
+.btn-delete-fb:hover {
+  background-color: rgba(239, 68, 68, 0.15);
+}

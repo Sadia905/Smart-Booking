@@ -1,0 +1,147 @@
+.admin-pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background-color: #ffffff;
+  border-top: 1px solid #f1f5f9;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.admin-dark-mode .admin-pagination-container {
+  background-color: #1e293b;
+  border-top-color: #334155;
+}
+
+.pagination-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+.admin-dark-mode .pagination-info {
+  color: #94a3b8;
+}
+
+.pagination-info strong {
+  color: #0f172a;
+}
+
+.admin-dark-mode .pagination-info strong {
+  color: #f8fafc;
+}
+
+.per-page-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.per-page-selector select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: #f8fafc;
+  font-size: 0.85rem;
+  font-family: inherit;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+.admin-dark-mode .per-page-selector select {
+  background-color: #0f172a;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.pg-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-dark-mode .pg-btn {
+  background-color: #0f172a;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+.pg-btn:hover:not(:disabled) {
+  background-color: #f1f5f9;
+  color: #4f46e5;
+  border-color: #c7d2fe;
+}
+
+.admin-dark-mode .pg-btn:hover:not(:disabled) {
+  background-color: #1e293b;
+  color: #818cf8;
+}
+
+.pg-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pg-numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pg-num-btn {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 6px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #475569;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-dark-mode .pg-num-btn {
+  color: #cbd5e1;
+}
+
+.pg-num-btn:hover {
+  background-color: #f1f5f9;
+  color: #4f46e5;
+}
+
+.admin-dark-mode .pg-num-btn:hover {
+  background-color: #334155;
+  color: #818cf8;
+}
+
+.pg-num-btn.active {
+  background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+}
+
+.pg-dots {
+  padding: 0 6px;
+  color: #94a3b8;
+  font-size: 0.88rem;
+}
